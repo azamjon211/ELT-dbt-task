@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: daily_revenue
+    description: "Kunlik daromad (bekor qilinmagan buyurtmalar bo'yicha)"
+    columns:
+      - name: order_date
+        description: "Buyurtma sanasi"
+        tests:
+          - unique
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null

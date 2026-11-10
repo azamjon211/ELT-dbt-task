@@ -1,0 +1,11 @@
+name: orders_dbt
+version: "1.0.0"
+config-version: 2
+profile: orders_dbt
+
+model-paths: ["models"]
+
+models:
+  orders_dbt:
+    marts:
+      +materialized: table
